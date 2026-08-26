@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShipCraft - Server Rules</title>
+    <title>ModsCraft - Server Rules</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,15 +14,66 @@
         <div class="navbar-left">
             <div class="logo-badge">MC</div>
             <div class="logo-text">
-                <span class="logo-ship">Ship</span><span class="logo-craft">Craft</span>
+                <span class="logo-title">ModsCraft</span>
                 <p>The Best Minecraft Bedrock Server</p>
             </div>
         </div>
         <div class="navbar-right">
-            <button class="lang-btn"><i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down"></i></button>
-            <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button class="lang-btn" id="openLangBtn"><i class="fa-solid fa-globe"></i> <span id="currentLang">EN</span> <i class="fa-solid fa-chevron-down"></i></button>
+            <button class="menu-btn" id="openMenuBtn"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
+
+    <!-- Language Selector Modal -->
+    <div class="modal-overlay" id="langOverlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Select Language</h3>
+                <button class="close-btn" id="closeLangBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="lang-grid">
+                <button class="lang-option active" data-lang="EN">
+                    <span class="flag">🇺🇸</span>
+                    <span class="lang-name">English</span>
+                </button>
+                <button class="lang-option" data-lang="RU">
+                    <span class="flag">🇷🇺</span>
+                    <span class="lang-name">Русский</span>
+                </button>
+                <button class="lang-option" data-lang="UA">
+                    <span class="flag">🇺🇦</span>
+                    <span class="lang-name">Українська</span>
+                </button>
+                <button class="lang-option" data-lang="DE">
+                    <span class="flag">🇩🇪</span>
+                    <span class="lang-name">Deutsch</span>
+                </button>
+                <button class="lang-option" data-lang="ES">
+                    <span class="flag">🇪🇸</span>
+                    <span class="lang-name">Español</span>
+                </button>
+                <button class="lang-option" data-lang="FR">
+                    <span class="flag">🇫🇷</span>
+                    <span class="lang-name">Français</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide-out Navigation Drawer / Menu Modal -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-modal">
+            <div class="menu-header">
+                <h3>Navigation</h3>
+                <button class="close-btn" id="closeMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-book"></i> Server Rules</a></li>
+                <li><a href="https://t.me/ShipCraftNET" target="_blank" class="contact-link"><i class="fa-brands fa-telegram"></i> Contact Us (Telegram)</a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Main Content Container -->
     <main class="container">
@@ -59,7 +110,7 @@
             <div class="accordion-card">
                 <button class="accordion-header">
                     <div class="header-title">
-                        <div class="icon-box green-box"><i class="fa-solid fa-shield"></i></div>
+                        <div class="icon-box green-box"><i class="fa-solid fa-shield-halved"></i></div>
                         <span>General Rules</span>
                     </div>
                     <i class="fa-solid fa-chevron-down arrow"></i>
@@ -306,7 +357,7 @@
 
             <!-- Rules for Moderators and Helpers Card -->
             <div class="accordion-card">
-                <button class="accordion-header coming-soon-header">
+                <button class="accordion-header">
                     <div class="header-title">
                         <div class="icon-box green-box"><i class="fa-solid fa-user-group"></i></div>
                         <span>Rules for Moderators and Helpers</span>
@@ -322,14 +373,38 @@
             </div>
 
         </div>
+
+        <!-- Important to Know Card -->
+        <div class="important-card">
+            <div class="important-header">
+                <i class="fa-solid fa-shield-halved important-icon"></i>
+                <h3>Important to Know</h3>
+            </div>
+            <ul class="important-list">
+                <li>By playing on our servers, you are obliged to familiarize yourself with these rules.</li>
+                <li>Ignorance of the rules does not exempt from responsibility and punishment.</li>
+                <li>Rules may be supplemented or changed at any time, without mandatory notification of players.</li>
+                <li>Server administration independently determines the type and measure of punishment depending on the nature of the violation: warning, temporary or permanent ban.</li>
+                <li>You agree that after successful payment for services you will not make claims to payment systems.</li>
+                <li>Money spent on server services is non-refundable if the service was provided in full after privilege issuance, except in cases where the service was not provided or was provided partially.</li>
+                <li>Refunds are made only to the details from which the payment was made (bank card, electronic wallet, etc.).</li>
+                <li>Refund request can be made within 7 calendar days from the moment of payment.</li>
+                <li>Refund of funds is possible only in case of full or partial non-performance of the service upon written request of the user to: <a href="mailto:qhyperqq@gmail.com">qhyperqq@gmail.com</a></li>
+            </ul>
+        </div>
+
     </main>
 
-    <!-- Floating Dock Nav -->
-    <div class="dock-nav">
-        <a href="#" class="dock-btn" title="Home"><i class="fa-solid fa-house"></i></a>
-        <a href="https://t.me/ShipCraftNET" target="_blank" class="dock-btn" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-        <a href="#" class="dock-btn" title="Shop"><i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="#" class="dock-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    <!-- Bottom App-Style Floating Bar -->
+    <div class="dock-container">
+        <div class="dock-nav">
+            <button class="dock-btn"><i class="fa-solid fa-house"></i></button>
+            <button class="dock-btn"><i class="fa-brands fa-discord"></i></button>
+            <button class="dock-btn"><i class="fa-brands fa-vk"></i></button>
+            <button class="dock-btn"><i class="fa-solid fa-square"></i></button>
+            <button class="dock-btn"><i class="fa-brands fa-github"></i></button>
+            <button class="dock-btn dock-main-btn"><i class="fa-solid fa-box-archive"></i></button>
+        </div>
     </div>
 
     <script src="script.js"></script>
