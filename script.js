@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     accordionHeaders.forEach(header => {
         header.addEventListener("click", () => {
-            const accordionItem = header.parentElement;
-            const content = accordionItem.querySelector(".accordion-content");
+            const accordionCard = header.parentElement;
+            const content = accordionCard.querySelector(".accordion-content");
 
-            // Toggle active accordion
-            accordionItem.classList.toggle("active");
+            // Toggle accordion state
+            accordionCard.classList.toggle("active");
 
-            if (accordionItem.classList.contains("active")) {
+            if (accordionCard.classList.contains("active")) {
                 content.style.maxHeight = content.scrollHeight + "px";
             } else {
                 content.style.maxHeight = "0px";
