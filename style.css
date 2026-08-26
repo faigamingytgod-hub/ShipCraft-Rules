@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background setup (Image does not move on scroll) */
+body {
+    background-image: url('bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    padding-bottom: 90px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(14, 18, 23, 0.88);
+    z-index: -1;
+}
+
+/* Header / Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(20, 26, 33, 0.95);
+    border-bottom: 2px solid #2a3441;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.logo-ship { color: #ff4d4d; }
+.logo-craft { color: #3399ff; }
+
+.logo small {
+    display: block;
+    font-size: 0.75rem;
+    color: #8a99ad;
+}
+
+.nav-buttons .btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.btn-primary { background-color: #2b384a; }
+.btn-discord { background-color: #5865F2; }
+.btn-store { background-color: #27ae60; }
+
+.btn:hover { opacity: 0.85; }
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.title-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
+    color: #2ecc71;
+    margin-bottom: 8px;
+}
+
+.title-section p {
+    color: #a0aec0;
+}
+
+/* Mode Banner */
+.mode-card {
+    background: #1e2630;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #2d3748;
+}
+
+.mode-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mode-icon {
+    font-size: 1.8rem;
+    background: #27ae60;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* Accordion Styling */
+.accordion-item {
+    background: #1e2630;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: 1px solid #2d3748;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 18px 20px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-header:hover {
+    background: #25303d;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #161c24;
+    padding: 0 20px;
+}
+
+.rule-list {
+    list-style: none;
+    padding: 15px 0;
+}
+
+.rule-list li {
+    padding: 12px 0;
+    color: #cbd5e0;
+    border-bottom: 1px solid #242d3c;
+    line-height: 1.5;
+}
+
+.rule-list li:last-child {
+    border-bottom: none;
+}
+
+.prohibited-title {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.punishment {
+    color: #2ecc71;
+    font-size: 0.95rem;
+}
+
+.note {
+    color: #cbd5e0;
+    font-size: 0.9rem;
+}
+
+/* Coming Soon Badge */
+.badge-coming-soon {
+    background: #e67e22;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.coming-soon-text {
+    padding: 20px 0;
+    color: #a0aec0;
+    font-style: italic;
+}
+
+/* Bottom Floating Navigation */
+.bottom-bar {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(30, 38, 48, 0.95);
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    border: 1px solid #3a4759;
+}
+
+.bar-btn {
+    color: #fff;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2a3441;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.bar-btn:hover {
+    background: #3399ff;
+    transform: translateY(-2px);
+}
