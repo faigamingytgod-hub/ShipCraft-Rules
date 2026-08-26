@@ -9,137 +9,327 @@
 </head>
 <body>
 
-    <!-- Header Navigation -->
+    <!-- Header Navbar -->
     <header class="navbar">
-        <div class="logo">
-            <span class="logo-ship">Ship</span><span class="logo-craft">Craft</span>
-            <small>Minecraft Server</small>
+        <div class="navbar-left">
+            <div class="logo-badge">MC</div>
+            <div class="logo-text">
+                <span class="logo-ship">Ship</span><span class="logo-craft">Craft</span>
+                <p>The Best Minecraft Bedrock Server</p>
+            </div>
         </div>
-        <div class="nav-buttons">
-            <a href="#" class="btn btn-primary"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="#" class="btn btn-discord"><i class="fa-brands fa-discord"></i> Discord</a>
-            <a href="#" class="btn btn-store"><i class="fa-solid fa-cart-shopping"></i> Store</a>
+        <div class="navbar-right">
+            <button class="lang-btn"><i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down"></i></button>
+            <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
 
-    <!-- Main Container -->
+    <!-- Main Content Container -->
     <main class="container">
         
-        <div class="title-section">
-            <h1>Server Rules</h1>
-            <p>Compliance with the rules is mandatory for all players</p>
+        <!-- Main Page Title -->
+        <div class="hero-section">
+            <h1 class="page-title">Server rules</h1>
+            <p class="page-subtitle">Compliance with the rules is mandatory for all players</p>
         </div>
 
+        <!-- Back Button -->
+        <div class="nav-back-wrapper">
+            <button class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back to main page</button>
+        </div>
+
+        <!-- Mode Card Container -->
         <div class="mode-card">
-            <div class="mode-header">
-                <i class="fa-solid fa-pickaxe mode-icon"></i>
-                <div>
+            <div class="mode-info">
+                <div class="icon-box mode-icon-box">
+                    <i class="fa-solid fa-pickaxe"></i>
+                </div>
+                <div class="mode-text">
                     <h2>Survival</h2>
-                    <small>Survival Mode Rules</small>
+                    <p>Survival Mode Rules</p>
                 </div>
             </div>
+            <button class="btn-sub-back"><i class="fa-solid fa-arrow-left"></i> Return to mode selection</button>
         </div>
 
-        <!-- Accordion Container -->
+        <!-- Accordion Rules Section -->
         <div class="accordion">
-            
-            <!-- SECTION 1: GENERAL RULES -->
-            <div class="accordion-item">
+
+            <!-- General Rules Card -->
+            <div class="accordion-card">
                 <button class="accordion-header">
-                    <span><i class="fa-solid fa-shield-halved"></i> General Rules</span>
+                    <div class="header-title">
+                        <div class="icon-box green-box"><i class="fa-solid fa-shield"></i></div>
+                        <span>General Rules</span>
+                    </div>
                     <i class="fa-solid fa-chevron-down arrow"></i>
                 </button>
                 <div class="accordion-content">
-                    <ul class="rule-list">
-                        <li><strong>1.1.</strong> Any person playing on the project automatically agrees to this set of rules and undertakes to follow them.</li>
-                        <li><strong>1.2.</strong> The game project administrators have full right to block your account for violating one or another point of the rules.</li>
-                        <li><strong>1.3.</strong> The game project administrators have full right to cancel/block your account without explanation.</li>
-                        <li><strong>1.4.</strong> All money transferred by you to the account is considered a voluntary decision and goes towards the development of the project.</li>
-                        <li><strong>1.5.</strong> The administration is not responsible for incorrectly transferred funds.</li>
-                        <li><strong>1.6.</strong> The administration is not obliged to return to you what you lost as a result of any technical/game situation.</li>
-                        <li><strong>1.7.</strong> This set of rules can be changed at any time, and the administration reserves the right not to notify players of changes.</li>
-                        <li><strong>1.8.</strong> Ignorance of the rules does not exempt you from responsibility, moreover, hacking of your account is not an excuse if you are accused of breaking the rules.</li>
-                        <li><strong>1.9.</strong> Refund of funds is possible only in cases provided by law, the list and rights of privileges (including modes where the privilege applies) may change without prior notice to their owners.</li>
-                        <li><strong>1.10.</strong> You have exactly 7 days from the day of receiving a punishment to appeal it.</li>
-                        <li><strong>1.11.</strong> Punishments for rule violations must be issued no later than 15 minutes (if the violation occurred in chat) or 24 hours (if the violation is game-related), after the specified time expires, punishment cannot be issued (punishment for non-compliance with the deadline is issued according to paragraph 2.13 and does not apply to server staff).</li>
-                        <li><strong>1.12.</strong> Every donor who has issued any punishment (ban/mute/kick/kill/unban/unmute) is obliged within 48 hours to provide evidence in the special Telegram topic (Link) (absence of evidence is equivalent to incorrect issuance).</li>
+                    <div class="content-inner">
+                        <p class="rule-line"><span class="rule-num">1.1.</span> Any person playing on the project automatically agrees to this set of rules and undertakes to follow them.</p>
+                        <p class="rule-line"><span class="rule-num">1.2.</span> The game project administrators have full right to block your account for violating one or another point of the rules.</p>
+                        <p class="rule-line"><span class="rule-num">1.3.</span> The game project administrators have full right to cancel/block your account without explanation.</p>
+                        <p class="rule-line"><span class="rule-num">1.4.</span> All money transferred by you to the account is considered a voluntary decision and goes towards the development of the project.</p>
+                        <p class="rule-line"><span class="rule-num">1.5.</span> The administration is not responsible for incorrectly transferred funds.</p>
+                        <p class="rule-line"><span class="rule-num">1.6.</span> The administration is not obliged to return to you what you lost as a result of any technical/game situation.</p>
+                        <p class="rule-line"><span class="rule-num">1.7.</span> This set of rules can be changed at any time, and the administration reserves the right not to notify players of changes.</p>
+                        <p class="rule-line"><span class="rule-num">1.8.</span> Ignorance of the rules does not exempt you from responsibility, moreover, hacking of your account is not an excuse if you are accused of breaking the rules.</p>
+                        <p class="rule-line"><span class="rule-num">1.9.</span> Refund of funds is possible only in cases provided by law, the list and rights of privileges (including modes where the privilege applies) may change without prior notice to their owners.</p>
+                        <p class="rule-line"><span class="rule-num">1.10.</span> You have exactly 7 days from the day of receiving a punishment to appeal it.</p>
+                        <p class="rule-line"><span class="rule-num">1.11.</span> Punishments for rule violations must be issued no later than 15 minutes (if the violation occurred in chat) or 24 hours (if the violation is game-related), after the specified time expires, punishment cannot be issued (punishment for non-compliance with the deadline is issued according to paragraph 2.13 and does not apply to server staff).</p>
+                        <p class="rule-line"><span class="rule-num">1.12.</span> Every donor who has issued any punishment (ban/mute/kick/kill/unban/unmute) is obliged within 48 hours to provide evidence in the special Telegram topic (<a href="https://t.me/ShipCraftNET" class="link-highlight" target="_blank">Link</a>) (absence of evidence is equivalent to incorrect issuance)</p>
                         
-                        <li class="prohibited-title">Prohibited:</li>
+                        <p class="section-tag-prohibited">Prohibited:</p>
                         
-                        <li><strong>2.1.</strong> Impersonating administration or moderation of the server without being its representative.<br><span class="punishment">Punishment: Account blocked for 7 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.2.</strong> Installing objects that excessively load the server and interfere with its stable operation.<br><span class="punishment">Punishment: Account blocked from 10 to 30 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.3.</strong> Using server vulnerabilities for personal gain (bugs, duplication).<br><span class="punishment">Punishment: Account blocked for 7 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.4.</strong> Using any cheats when fighting another player (exception: clicker without auto-aim).<br><span class="punishment">Punishment: Account blocked for 15 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.5.</strong> Any transfer/sale/hacking of account.<br><span class="note">+ If you transferred your account to another player and they violated the rules - only you are to blame.</span><br><span class="punishment">Punishment: Account blocked forever and donation removal.</span></li>
-                        <li><strong>2.6.</strong> Trading in-game valuables for real currency (for example, rubles or dollars).<br><span class="note">+ Exception: Exchange of in-game items for donation purchases issued to another player's account (for example, a player gives you 10 emerald blocks, and you buy a privilege for them).</span><br><span class="punishment">Punishment: Account blocked forever and donation removal.</span></li>
-                        <li><strong>2.7.</strong> Creating obstacles for the work of moderation or administration.<br><span class="punishment">Punishment: Kick/account block/chat block or donation removal depending on the situation, at the discretion of administration/moderation.</span></li>
-                        <li><strong>2.8.</strong> Disrupting entertainment events on the project or creating distracting factors for organizers.<br><span class="punishment">Punishment: Kick/chat block/account block/donation removal depending on the situation, at the discretion of administration/moderation.</span></li>
-                        <li><strong>2.9.</strong> Inciting players to break rules with an offer of benefits (for example, asking to ban someone for 10 diamond blocks).<br><span class="punishment">Punishment: Account blocked for 3 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.10.</strong> Misleading players (including deceiving players for donation currency - rubies when exchanging them for game resources).<br><span class="punishment">Punishment: Account blocked for 15 days (or account removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.11.</strong> Any PvP or griefing using donation abilities.<br><span class="note">+ All players added to private are equal owners of the region - that is, by adding a player to your private, you allow them to do anything in the region.</span><br><span class="note">+ Also prohibited is giving effects using the "/effect" command to yourself or another player with subsequent use in battle with any player (exceptions are those effects whose level does not exceed standard values, that is, obtained, for example, by eating an enchanted apple or using regular potions).</span><br><span class="punishment">Punishment: In case of regular PvP - warning and account blocked for 4 days, in case of griefing (even from a player without donation) - account blocked for 7 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.12.</strong> Bypassing any punishment by creating a new account with subsequent violations.<br><span class="punishment">Punishment: IP block or doubling of punishment period (account block under 2.12 is not included).</span></li>
-                        <li><strong>2.13.</strong> Incorrect removal or issuance of any punishment (even to yourself) without reason or without evidence (for example, incorrect punishment measure or removing chat block because it's your friend).<br><span class="note">+ Punishment in the form of kick can be issued as a warning punishment.</span><br><span class="note">+ Donor can issue punishment less than the period specified in the rules or a lesser degree of punishment, but not higher than written in the rules, if they, for example, do not have access to the punishment specified in the rules (for example, chat block instead of account).</span><br><span class="punishment">Punishment: Warning and account blocked for 4 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.14.</strong> Issuing punishment (even to yourself) with insulting subtext or profanity (for example, account block for reason "loser").<br><span class="punishment">Punishment: Account blocked for 10 days and donation removal.</span></li>
-                        <li><strong>2.15.</strong> Having permanent (registration) or changed through command insulting or profane nickname.<br><span class="note">+ If the nickname is changed through command - should ask the player to change it to any other that is not prohibited by the rules (if refused or ignored - issue punishment).</span><br><span class="punishment">Punishment: If the nickname is changed via the command, the account will be blocked for 7 days, if the nickname is permanent, the account will be blocked permanently (or the donation will be removed if the violation is particularly serious).</span></li>
-                        <li><strong>2.16.</strong> Installing invisible, pornographic, profane, as well as too large or too small 4D skin or cape (as well as any other skin or cape violating other rules).<br><span class="note">+ Installed skin must not be lower than 1 block and not higher than 3 blocks.</span><br><span class="punishment">Punishment: Account blocked for 7 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.17.</strong> Teleporting player to yourself without reason.<br><span class="punishment">Punishment: Account blocked for 3 days and warning.</span></li>
-                        <li><strong>2.18.</strong> Interference in the region on anti-griefing modes (the region owner has the right to kick third-party players out of the region).<br><span class="punishment">Punishment: Verbal request to leave region, if player refuses - kick, if situation repeats - account blocked for 30 minutes (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.19.</strong> Map corruption, installing or breaking blocks in chaotic order, spilling large amounts of water or lava (allowed in your region).<br><span class="punishment">Punishment: Account blocked for 5 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.20.</strong> Abuse or purposeful flooding in huge quantities with any commands.<br><span class="punishment">Punishment: Account blocked for 12 hours (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.21.</strong> Spreading Nazism or fascism (for example, building swastika).<br><span class="punishment">Punishment: Account blocked for 15 days and demolition of prohibited structure (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.22.</strong> Installing prefix containing profane language, staff prefix and any other that somehow violates server rules.<br><span class="punishment">Punishment: Warning and account blocked for 7 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.23.</strong> Deception or attempt to deceive someone for game account.<br><span class="punishment">Punishment: Account blocked forever and donation removal.</span></li>
-                        <li><strong>2.24.</strong> Giving money using commands "/givemoney" and "/setmoney" or expensive resources from creative in huge quantities to many players or zeroing balance without reason.<br><span class="punishment">Punishment: Account blocked for 15 days and warning (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>2.25.</strong> Giving yourself punishment for small period in order to avoid normal punishment.<br><span class="punishment">Punishment: Account blocked for 10 days and warning (or donation removal if the violation is particularly severe).</span></li>
-                    </ul>
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.1.</span> Impersonating administration or moderation of the server without being its representative.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 7 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.2.</span> Installing objects that excessively load the server and interfere with its stable operation.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked from 10 to 30 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.3.</span> Using server vulnerabilities for personal gain (bugs, duplication).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 7 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.4.</span> Using any cheats when fighting another player (exception: clicker without auto-aim).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 15 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.5.</span> Any transfer/sale/hacking of account.</p>
+                            <p class="rule-subtext">+ If you transferred your account to another player and they violated the rules - only you are to blame.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked forever and donation removal.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.6.</span> Trading in-game valuables for real currency (for example, rubles or dollars).</p>
+                            <p class="rule-subtext">+ Exception: Exchange of in-game items for donation purchases issued to another player's account (for example, a player gives you 10 emerald blocks, and you buy a privilege for them).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked forever and donation removal.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.7.</span> Creating obstacles for the work of moderation or administration.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Kick/account block/chat block or donation removal depending on the situation, at the discretion of administration/moderation.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.8.</span> Disrupting entertainment events on the project or creating distracting factors for organizers.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Kick/chat block/account block/donation removal depending on the situation, at the discretion of administration/moderation.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.9.</span> Inciting players to break rules with an offer of benefits (for example, asking to ban someone for 10 diamond blocks).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 3 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.10.</span> Misleading players (including deceiving players for donation currency - rubies when exchanging them for game resources).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 15 days (or account removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.11.</span> Any PvP or griefing using donation abilities.</p>
+                            <p class="rule-subtext">+ All players added to private are equal owners of the region - that is, by adding a player to your private, you allow them to do anything in the region.</p>
+                            <p class="rule-subtext">+ Also prohibited is giving effects using the "/effect" command to yourself or another player with subsequent use in battle with any player (exceptions are those effects whose level does not exceed standard values, that is, obtained, for example, by eating an enchanted apple or using regular potions).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> In case of regular PvP - warning and account blocked for 4 days, in case of griefing (even from a player without donation) - account blocked for 7 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.12.</span> Bypassing any punishment by creating a new account with subsequent violations.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> IP block or doubling of punishment period (account block under 2.12 is not included).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.13.</span> Incorrect removal or issuance of any punishment (even to yourself) without reason or without evidence (for example, incorrect punishment measure or removing chat block because it's your friend).</p>
+                            <p class="rule-subtext">+ Punishment in the form of kick can be issued as a warning punishment.</p>
+                            <p class="rule-subtext">+ Donor can issue punishment less than the period specified in the rules or a lesser degree of punishment, but not higher than written in the rules, if they, for example, do not have access to the punishment specified in the rules (for example, chat block instead of account).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Warning and account blocked for 4 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.14.</span> Issuing punishment (even to yourself) with insulting subtext or profanity (for example, account block for reason "loser").</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 10 days and donation removal.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.15.</span> Having permanent (registration) or changed through command insulting or profane nickname.</p>
+                            <p class="rule-subtext">+ If the nickname is changed through command - should ask the player to change it to any other that is not prohibited by the rules (if refused or ignored - issue punishment).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> If the nickname is changed via the command, the account will be blocked for 7 days, if the nickname is permanent, the account will be blocked permanently (or the donation will be removed if the violation is particularly serious).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.16.</span> Installing invisible, pornographic, profane, as well as too large or too small 4D skin or cape (as well as any other skin or cape violating other rules).</p>
+                            <p class="rule-subtext">+ Installed skin must not be lower than 1 block and not higher than 3 blocks.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 7 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.17.</span> Teleporting player to yourself without reason.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 3 days and warning.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.18.</span> Interference in the region on anti-grifting modes (the region owner has the right to kick third-party players out of the region).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Verbal request to leave region, if player refuses - kick, if situation repeats - account blocked for 30 minutes (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.19.</span> Map corruption, installing or breaking blocks in chaotic order, spilling large amounts of water or lava (allowed in your region).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 5 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.20.</span> Abuse or purposeful flooding in huge quantities with any commands.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 12 hours (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.21.</span> Spreading Nazism or fascism (for example, building swastika).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 15 days and demolition of prohibited structure (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.22.</span> Installing prefix containing profane language, staff prefix and any other that somehow violates server rules.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Warning and account blocked for 7 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.23.</span> Deception or attempt to deceive someone for game account.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked forever and donation removal.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.24.</span> Giving money using commands "/givemoney" and "/setmoney" or expensive resources from creative in huge quantities to many players or zeroing balance without reason.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 15 days and warning (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.25.</span> Giving yourself punishment for small period in order to avoid normal punishment.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 10 days and warning (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.26.</span> Creating clan whose name matches staff prefix name, contains profane language or violates other rules.</p>
+                            <p class="rule-subtext">+ If you are a member of the clan, not its owner - before punishment there will be verbal request to leave it.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 7 days and warning.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">2.27.</span> Any threats of deanonymization, doxxing, swatting and other similar actions or statements violating safety and personal space of players.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 30 days and donation removal.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- SECTION 2: CHAT & COMMUNICATION -->
-            <div class="accordion-item">
+            <!-- Chat and Communication Card -->
+            <div class="accordion-card">
                 <button class="accordion-header">
-                    <span><i class="fa-solid fa-comments"></i> Chat And Communication</span>
+                    <div class="header-title">
+                        <div class="icon-box green-box"><i class="fa-solid fa-comment-dots"></i></div>
+                        <span>Chat and Communication</span>
+                    </div>
                     <i class="fa-solid fa-chevron-down arrow"></i>
                 </button>
                 <div class="accordion-content">
-                    <ul class="rule-list">
-                        <li><strong>3.1.</strong> Offensive/humiliating statements towards any player or administration/moderation (if you "send away" player or administration/moderation - it will also be considered insult).<br><span class="punishment">Punishment: When insulting player - chat blocked for 30 minutes, when insulting moderation/administration of project - account blocked for 3 days.</span></li>
-                        <li><strong>3.2.</strong> Flood, spam or sending identical messages in short period of time.<br><span class="note">+ Interval between identical messages not less than 30 seconds; no more than two identical messages in row; advertising warp, shop and similar - no more than once every 2 minutes.</span><br><span class="punishment">Punishment: Chat blocked for 30 minutes (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>3.3.</strong> Advertising any third-party software, game resources, channels, servers, shops.<br><span class="note">+ Mention can be calculated as advertising.</span><br><span class="punishment">Punishment: Account blocked for 30 days and donation removal.</span></li>
-                        <li><strong>3.4.</strong> Insulting the project.<br><span class="punishment">Punishment: Account blocked for 30 days and donation removal.</span></li>
-                        <li><strong>3.5.</strong> Publicizing bugs or dupes.<br><span class="punishment">Punishment: Account blocked for 7 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>3.6.</strong> Insulting or mentioning someone's relatives in offensive manner.<br><span class="punishment">Punishment: Account blocked for 10 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>3.7.</strong> Insulting feelings of believers.<br><span class="punishment">Punishment: Account blocked for 10 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>3.8.</strong> Propaganda or agitation inciting social, racial, national or religious hatred and enmity.<br><span class="punishment">Punishment: Account blocked for 15 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>3.9.</strong> Begging for resources or any other game and non-game valuables.<br><span class="punishment">Punishment: Chat blocked from 10 to 30 minutes (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>3.10.</strong> Multiple violations (more than 5 times in 24 hours) of chat rules (when player repeatedly receives same punishment for same violation).<br><span class="punishment">Punishment: Account blocked for 10 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>3.11.</strong> Discussion of politics/military actions in any form, creating structures or clans with names that somehow touch on politics or military actions.<br><span class="punishment">Punishment: Warning in form of chat block for 30 minutes, then account block for 10 hours, then block for 3 days (or donation removal if the violation is particularly severe).</span></li>
-                        <li><strong>3.12.</strong> Threats of causing moral or physical harm in real life.<br><span class="punishment">Punishment: Account blocked for 7 days (or donation removal if the violation is particularly severe).</span></li>
-                    </ul>
+                    <div class="content-inner">
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.1.</span> Offensive/humiliating statements towards any player or administration/moderation (if you "send away" player or administration/moderation - it will also be considered insult).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> When insulting player - chat blocked for 30 minutes, when insulting moderation/administration of project - account blocked for 3 days.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.2.</span> Flood, spam or sending identical messages in short period of time.</p>
+                            <p class="rule-subtext">+ Interval between identical messages not less than 30 seconds; no more than two identical messages in row; advertising warp, shop and similar - no more than once every 2 minutes.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Chat blocked for 30 minutes (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.3.</span> Advertising any third-party software, game resources, channels, servers, shops.</p>
+                            <p class="rule-subtext">+ Mention can be calculated as advertising.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 30 days and donation removal.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.4.</span> Insulting the project.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 30 days and donation removal.</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.5.</span> Publicizing bugs or dupes.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 7 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.6.</span> Insulting or mentioning someone's relatives in offensive manner.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 10 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.7.</span> Insulting feelings of believers.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 10 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.8.</span> Propaganda or agitation inciting social, racial, national or religious hatred and enmity.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 15 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.9.</span> Begging for resources or any other game and non-game valuables.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Chat blocked from 10 to 30 minutes (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.10.</span> Multiple violations (more than 5 times in 24 hours) of chat rules (when player repeatedly receives same punishment for same violation).</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 10 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.11.</span> Discussion of politics/military actions in any form, creating structures or clans with names that somehow touch on politics or military actions.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Warning in form of chat block for 30 minutes, then account block for 10 hours, then block for 3 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+
+                        <div class="punishment-block">
+                            <p class="rule-line"><span class="rule-num">3.12.</span> Threats of causing moral or physical harm in real life.</p>
+                            <p class="punishment-text"><span class="punishment-tag">Punishment:</span> Account blocked for 7 days (or donation removal if the violation is particularly severe).</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- SECTION 3: STAFF RULES (COMING SOON) -->
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    <span><i class="fa-solid fa-user-shield"></i> Rules for Moderators and Helpers</span>
-                    <span class="badge-coming-soon">Coming Soon</span>
+            <!-- Rules for Moderators and Helpers Card -->
+            <div class="accordion-card">
+                <button class="accordion-header coming-soon-header">
+                    <div class="header-title">
+                        <div class="icon-box green-box"><i class="fa-solid fa-user-group"></i></div>
+                        <span>Rules for Moderators and Helpers</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
                 </button>
                 <div class="accordion-content">
-                    <p class="coming-soon-text">Staff rules are currently being updated and will be posted soon.</p>
+                    <div class="content-inner coming-soon-box">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Coming Soon</p>
+                    </div>
                 </div>
             </div>
 
         </div>
-
     </main>
 
-    <!-- Fixed Bottom Bar -->
-    <div class="bottom-bar">
-        <a href="#" class="bar-btn" title="Home"><i class="fa-solid fa-house"></i></a>
-        <a href="#" class="bar-btn" title="Discord"><i class="fa-brands fa-discord"></i></a>
-        <a href="#" class="bar-btn" title="Store"><i class="fa-solid fa-gem"></i></a>
-        <a href="#" class="bar-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    <!-- Floating Dock Nav -->
+    <div class="dock-nav">
+        <a href="#" class="dock-btn" title="Home"><i class="fa-solid fa-house"></i></a>
+        <a href="https://t.me/ShipCraftNET" target="_blank" class="dock-btn" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="dock-btn" title="Shop"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#" class="dock-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
     </div>
 
     <script src="script.js"></script>
